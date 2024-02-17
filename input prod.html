@@ -9,12 +9,6 @@
     <link 
     href="css/bootstrap.css" rel="stylesheet"
     /> 
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
     <!-- navigasi -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
         <div class="container-fluid">
@@ -40,79 +34,86 @@
         </div>
       </nav>
     <div class="container container-fluid">
-        <div class="card mt-10">
+        <div class="card mt-20">
             <div class="card-header text-center">
                 <h2> FORM ALKA </h2>
             </div>
         <div class="card-body">
             <form>
-                <div class="form-group row ">
+                <div class="form-group row mt-1">
                     <label class="col-sm-2 col-form-label"><b>KODE BARANG</b></label>
                     <div class="col-sm-10">
                         <input type="text" id="KODEBARANG" name="KODE" class="form-control" id="inputKODE">
                     </div>
                 </div>
-                <div class="form-group row mt-3">
+                <div class="form-group row mt-2">
                     <label class="col-sm-2 col-form-label"><b>NAMA BARANG</b></label>
                     <div class="col-sm-10">
                         <input type="text" id="namabarang" name="nama" class="form-control" id="inputnama">
                     </div>
                 </div>
-                <div class="form-group row mt-3 ">
-                    <label class="col-sm-2 col-form-label"><b>CATEGORI</b> :</label>
-                    <div class="col-sm-10">
-                        <input type="text" id="email" name="kategori" class="form-control" id="inputkategori">
-                    </div>
+                <div class="container text-center">
+                    <label class="col-lg-2 col-form-label"><b>KATEGORI</b>
+                        <div class="container">
+                            <select class="form-control text-center" id="inputkategori" name="kategori">
+                                <option>PILIH KATEGORI</option>
+                                <option value="category1">kategori 1</option>
+                                <option value="category2">kategori 2</option>
+                                <option value="category3">kategori 3</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                    </label>
                 </div>
-                <div class="form-group row mt-3 ">
+                <div class="form-group row mt-2 ">
                     <label class="col-sm-2 col-form-label"><b>HARGA</b></label>
                     <div class="col-sm-10">
                         <input type="text" id="alamat" name="harga" class="form-control" id="inputharga">
                     </div>
                 </div>
-                <div class="form-group row mt-3 ">
+                <div class="form-group row mt-2 ">
                     <label class="col-sm-2 col-form-label"><b>JUMLAH STOK</b></label>
                     <div class="col-sm-10">
                         <input type="text" id="jumlah stok" name="stok" class="form-control" id="inputjumlah">
                     </div>
                 </div>
-                <div class="form-group row mt-3 ">
+                <div class="form-group row mt-2 ">
                     <label class="col-sm-2 col-form-label"><b>FOTO</b></label>
                     <div class="col-sm-10">
                         <input type="text" id="foto" name="foto" class="form-control" id="inputfoto">
                     </div>
                 </div>
-                <div class="form-group row mt-3 ">
+                <div class="form-group row mt-2 ">
                     <label class="col-sm-2 col-form-label"><b>KAPASITAS</b></label>
                     <div class="col-sm-10">
                         <input type="text" id="kapasitas" name="kapasitas" class="form-control" id="inputkapasitas">
                     </div>
                 </div>
-                <div class="form-group row mt-3 ">
+                <div class="form-group row mt-2 ">
                     <label class="col-sm-2 col-form-label"><b>TINGGI</b></label>
                     <div class="col-sm-10">
                         <input type="text" id="tinggi" name="tinggi" class="form-control" id="inputtinggi">
                     </div>
                 </div>
-                <div class="form-group row mt-3 ">
+                <div class="form-group row mt-2 ">
                     <label class="col-sm-2 col-form-label"><b>LEBAR</b></label>
                     <div class="col-sm-10">
                         <input type="text" id="" name="lebar" class="form-control" id="inputlebarf">
                     </div>
                 </div>
-                <div class="form-group row mt-3  ">
+                <div class="form-group row mt-2  ">
                     <label class="col-sm-2 col-form-label"><b>DIAMETER</b></label>
                     <div class="col-sm-10">
                         <input type="text" id="diameter" name="diameter" class="form-control" id="inputdiameter">
                     </div>
                 </div>
-                <div class="form-group row mt-3  ">
+                <div class="form-group row mt-2  ">
                     <label class="col-sm-2 col-form-label"><b>BERAT TOTAL (KG)</b></label>
                     <div class="col-sm-10">
                         <input type="text" id="berattotal" name="berattotal" class="form-control" id="inputberattotal">
                     </div>
                 </div>
-                <div class="form-group row mt-3  ">
+                <div class="form-group row mt-2  ">
                     <label class="col-sm-2 col-form-label"><b>FIRE RATE (Lab. DinasPMK)</b></label>
                     <div class="col-sm-10">
                         <input type="text" id="fire rate" name="fire rate" class="form-control" id="inputfirerate">
@@ -121,8 +122,8 @@
             </form>
         </div>
         <div class="container text-center ">
-            <button type="button" class="btn btn-success btn-lg">Input</button>
-            <button type="button" class="btn btn-danger btn-lg">Batal</button>
+            <button type="button" class="btn btn-success btn-sm">Input</button>
+            <button type="button" class="btn btn-danger btn-sm col sm-5">Batal</button>
         </div>
     </div>
     </div>
